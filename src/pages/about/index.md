@@ -1,19 +1,29 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: About Us
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+## The First Twenty Five (plus two!) Years …
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+The Sheringham Shantymen are immensely proud to wear the RNLI badge on their uniform and the only organisation outside the RNLI that is allowed to do so. They support the RNLI in a myriad of ways as well as supporting and performing at lifeboat stations around the United Kingdom and Ireland.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+The Shantymen spent three years raising almost £20,000 to purchase a new ‘D’ Class Lifeboat which the RNLI stationed in Wicklow in Ireland. In the autumn of 2007 the Shantymen attended the official naming ceremony in Wicklow where the lifeboat was formally named ‘The Sheringham Shantymen‘.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+The Shantymen travel widely throughout the UK and Ireland supporting Lifeboat Stations in their fundraising efforts and are always considering how they can help in others to raise funds by performing concerts.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+The Shantymen have visited Germany, Virginia USA twice, Ireland four times, Holland twice and France twice. As well as hundreds of local performances the group has entertained at prestigious Maritime Festivals at Bristol, Lincoln, Ipswich, Great Yarmouth, Southampton (start of the 2000 Tall Ships Race) and Portsmouth Festival of the Sea. They helped open the International Boat Show at Earl’s Court in 1995 and have appeared on national television in ‘The Big Breakfast Show’, ‘Highway’ (with the late Sir Harry Secombe), Children in Need, and ‘Blue Peter’ for which they have ‘the badge’. Since 1990 the group has completed over 1,000 public performances, made three videos and recorded 7 CD’s the most recent one in 2016.
+
+In 2009 the Shantymen completed their first visit to the Isle of Wight helping raise over £3,000 in funds for the private Freshwater Lifeboat. The Shantymen were impressed by the commitment of the crew and helpers to fund the private lifeboat at Freshwater.  In early 2010 the Shantymen were invited to sing at the BBC’s ‘The One Show’ which they said was a thoroughly entertaining experience.
+
+In 2011 they performed two festivals in quick succession, in France at the St Vaast Festival followed quickly by the the Falmouth International Sea Shanty Festival – a festival the Shantymen have attended since its inception some years ago and witnessed the organizers develop one of the best shanty festivals in the country. The Shantymen also performed for ‘Ade In Britain’ in 2011 and ‘Country File’ in 2012.
+
+In March of 2014 the Shantymen made their 6th CD in St Peters Church Sheringham and enjoyed another great season.
+
+In 2015 they celebrated their 25th anniversary and completed three special concerts, two in Sheringham and one in Cromer Pavilion Theatre. It was a great year which they enjoyed immensely and they gave their profound thanks to the people of Norfolk who have supported them throughout.  2016 was another great year for the Shantymen as they welcomed some new younger blood into their midst and these will help develop new ideas and new ways for the future.  They also made their 7th CD at St Peters Church which comprised a selection of their favourite songs.
+
+2017 was again a very busy year with thirty odd gigs including major performances at International Sea Festivals at Falmouth and Great Yarmouth and our first gig at Folk East which we hope will become an annual event for us.
+
+The Shantymen expect 2018 will be another fun filled year and they look forward to finishing the season with another gig at Cromer Pier Pavilion Theatre on Sunday November 4th 2018 with their good friend, journalist, author and all round entertainer Mr Keith Skipper.
+
+Brian J Farrow
+Musical Director
+1st June 2018
