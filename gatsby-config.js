@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
-    description: 'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    title: 'Sheringham Shantymen',
+    description: 'The Shantymen travel widely throughout the UK and Ireland supporting Lifeboat Stations in their fundraising efforts and are always considering how they can help in others to raise funds by performing concerts.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
