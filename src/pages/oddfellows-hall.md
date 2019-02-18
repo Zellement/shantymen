@@ -2,8 +2,7 @@
 templateKey: standard-page
 title: Oddfellows Hall
 ---
-
-Oddfellows Hall~ Home of the Sheringham Shantymen
+# Oddfellows Hall~ Home of the Sheringham Shantymen
 
 and available for hire
 
