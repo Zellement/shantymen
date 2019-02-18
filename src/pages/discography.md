@@ -1,5 +1,5 @@
 ---
-templateKey: standard-page
+templateKey: discography-page
 title: Discography
 album-listing:
   - album:

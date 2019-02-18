@@ -6,7 +6,7 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
@@ -37,5 +37,15 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "CD Listing", name: "cd-listing", widget: "List", default: ["news"]}
-          
+          - label: 'Album Listing'
+            name: 'album-listing'
+            widget: 'list'
+            fields:
+              - label: 'Album'
+                name: 'album'
+                widget: 'object'
+                fields:
+                  - { label: 'CD Title', name: 'cd-title', widget: 'string' }
+                  - { label: 'Year', name: 'year', widget: 'string', hint: 'Year' }
+                  - { label: 'Artwork', name: 'artwork', widget: 'image' }
+                  - { label: 'Details & Track Listing', name: "details-track-listing", widget: markdown }

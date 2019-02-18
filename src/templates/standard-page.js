@@ -40,6 +40,7 @@ const StandardPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        discography={post.html}
       />
     </Layout>
   )
