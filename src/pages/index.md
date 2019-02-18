@@ -1,5 +1,5 @@
 ---
 templateKey: standard-page
-title: Index
+title: Home
 ---
-# Gigs
+# This is gonna be a fab homepage
