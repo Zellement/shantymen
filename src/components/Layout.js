@@ -2,8 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
+import Header from '../components/Header'
 import Navbar from '../components/Navbar'
-import './all.sass'
+import '../scss/core/reset.scss'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -29,13 +30,14 @@ const TemplateWrapper = ({ children }) => (
 	        <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
 	
 	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
-	        <meta name="theme-color" content="#fff" />
+	        <meta name="theme-color" content="#23335B" />
 
 	        <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
+        <Header />
         <Navbar />
         <div>{children}</div>
       </div>
