@@ -5,8 +5,8 @@ import Layout from '../components/Layout'
 //import { TrackListing } from '../components/TrackListing'
 //import Content, { HTMLContent } from '../components/Content'
 
-class DiscographyContent extends React.Component {
-  render (){
+const DiscographyPage = ({ data }) => {
+  console.log(data)
     return (
       <Layout>
         <section className="section section--gradient">
@@ -14,10 +14,22 @@ class DiscographyContent extends React.Component {
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="section">
-                  <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                    hi
-                  </h2>
-                  
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                  {/* This takes the data from the query below, goes through the tree (including the first and only edge, and output the title */}
+                  {data.allMarkdownRemark.edges[0].node.frontmatter.title}
+                </h2>
+                  {/* This needs to be done via the Content component */}
+                <div>{data.allMarkdownRemark.edges[0].node.html}</div>
+
+                  {/* This loops and maps through all the album_listing array, and outputs them all */}
+                  {data.allMarkdownRemark.edges[0].node.frontmatter.album_listing.map(albumdata => (
+                    <div>
+                    <h3 className="title is-size-4 has-text-weight-bold is-bold-light">{albumdata.album.cd_title}</h3>
+                  {/* This needs to be done via the Content component */}
+                    <div>{albumdata.album.details_track_listing}</div>
+                    </div>
+                  ))}
+
                 </div>
               </div>
             </div>
@@ -25,30 +37,27 @@ class DiscographyContent extends React.Component {
         </section>
       </Layout>
     )
-  }
 }
 
-export default DiscographyContent
-
 export const DiscographyPageQuery = graphql`
-  query DiscographyPage 
-    {
-      allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "discography-page"}}}) {
-        edges {
-          node {
-            frontmatter {
-              title
-              album_listing {
-                album {
-                  cd_title
-                  details_track_listing
-                }
-              }
+  query 
+{
+  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "discography-page"}}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          album_listing {
+            album {
+              cd_title
+              details_track_listing
             }
-            html
           }
         }
+        html
       }
     }
-    
-`
+  }
+}`
+
+export default DiscographyPage
