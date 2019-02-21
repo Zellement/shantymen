@@ -50,7 +50,6 @@ export const DiscographyPageQuery = graphql`
           shantymen_albums {
             album_name
             album_year
-            album_artwork
             album_details_track_listing
           }
         }
