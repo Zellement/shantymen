@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
-import '../scss/base/reset.scss'
+import '../scss/master.scss'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery

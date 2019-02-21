@@ -22,11 +22,12 @@ const DiscographyPage = ({ data }) => {
                 <div>{data.allMarkdownRemark.edges[0].node.html}</div>
 
                   {/* This loops and maps through all the album_listing array, and outputs them all */}
-                  {data.allMarkdownRemark.edges[0].node.frontmatter.album_listing.map(albumdata => (
+                  {data.allMarkdownRemark.edges[0].node.frontmatter.shantymen_albums.map(albumdata => (
                     <div>
-                    <h3 className="title is-size-4 has-text-weight-bold is-bold-light">{albumdata.album.cd_title}</h3>
+                    <h3 className="title is-size-4 has-text-weight-bold is-bold-light">{albumdata.album_name}</h3>
+                    <h3 className="title is-size-5 has-text-weight-bold is-bold-light">{albumdata.album_year}</h3>
                   {/* This needs to be done via the Content component */}
-                    <div>{albumdata.album.details_track_listing}</div>
+                    <div>{albumdata.album_details_track_listing}</div>
                     </div>
                   ))}
 
@@ -46,13 +47,14 @@ export const DiscographyPageQuery = graphql`
     edges {
       node {
         frontmatter {
-          title
-          album_listing {
-            album {
-              cd_title
-            }
+          shantymen_albums {
+            album_name
+            album_year
+            album_artwork
+            album_details_track_listing
           }
         }
+        html
       }
     }
   }

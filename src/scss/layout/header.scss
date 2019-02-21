@@ -1,3 +1,46 @@
 header {
-	
+	background: $deep-blue;
+	padding: 20px;
+}
+
+.logo {
+	height: auto;
+	display: block;
+
+	&__image {
+		display: block;
+		width: 100%;
+		max-width: 130px;
+		margin: 0 auto;
+	}
+
+	&__text {
+		width: 100%;
+		display: block;
+		max-width: 160px;
+		margin: 0 auto;
+	}
+
+}
+
+@include bp800 {
+
+	.logo {
+
+		&__image, &__text {
+			float: left;
+		}
+
+		&__text {
+			padding: 20px 0 0 30px;
+			max-width: 200px;
+		}
+
+		&:after {
+			content: '';
+			clear: both;
+			display: block;
+		}
+	}
+
 }
