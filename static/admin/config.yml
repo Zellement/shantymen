@@ -55,14 +55,10 @@ collections:
             name: 'gig-listing'
             widget: 'list'
             fields:
-              - label: 'Gig'
-                name: 'gig'
-                widget: 'object'
-                fields:
-                  - { label: 'Date', name: 'date', widget: 'date', format: 'dddd Do MMM YYYY' }
-                  - { label: 'Time', name: 'time', widget: 'string' }
-                  - { label: 'Location', name: 'location', widget: 'string' }
-                  - { label: 'Details', name: "details", widget: 'markdown' }
+              - { label: 'Date', name: 'date', widget: 'date', format: 'dddd Do MMM YYYY' }
+              - { label: 'Time', name: 'time', widget: 'string' }
+              - { label: 'Location', name: 'location', widget: 'string' }
+              - { label: 'Details', name: "details", widget: 'markdown' }
       - file: "src/pages/guestbook.md"
         label: "Guestbook"
         name: "guestbook"
@@ -89,11 +85,7 @@ collections:
             name: 'album-listing'
             widget: 'list'
             fields:
-              - label: 'Album'
-                name: 'album'
-                widget: 'object'
-                fields:
-                  - { label: 'CD Title', name: 'cd-title', widget: 'string' }
-                  - { label: 'Year', name: 'year', widget: 'string', hint: 'Year' }
-                  - { label: 'Artwork', name: 'artwork', widget: 'image' }
-                  - { label: 'Details & Track Listing', name: "details-track-listing", widget: 'markdown' }
+              - { label: 'Album Title', name: 'album-title', widget: 'string' }
+              - { label: 'Year', name: 'year', widget: 'string', hint: 'Year' }
+              - { label: 'Artwork', name: 'artwork', widget: 'image' }
+              - { label: 'Details & Track Listing', name: "details-track-listing", widget: 'markdown' }
