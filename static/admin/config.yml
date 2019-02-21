@@ -59,7 +59,7 @@ collections:
                 name: 'gig'
                 widget: 'object'
                 fields:
-                  - { label: 'Date', name: 'date', widget: 'date', format: 'Do MMM YYYY' }
+                  - { label: 'Date', name: 'date', widget: 'date', format: 'dddd Do MMM YYYY' }
                   - { label: 'Time', name: 'time', widget: 'string' }
                   - { label: 'Location', name: 'location', widget: 'image' }
                   - { label: 'Details', name: "details", widget: 'markdown' }
