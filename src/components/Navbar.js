@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Logo from '../components/Logo'
 
 const Navbar = class extends React.Component {
 
@@ -31,7 +30,6 @@ const Navbar = class extends React.Component {
    return (
   
   <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
-  <Logo />
     <div className="container">
       <div className="navbar-brand">
 
