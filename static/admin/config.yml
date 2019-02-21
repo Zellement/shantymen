@@ -81,11 +81,11 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - label: 'Album Listing'
-            name: 'album-listing'
+          - label: 'Shantymen Albums'
+            name: 'shantymen-albums'
             widget: 'list'
             fields:
-              - { label: 'Album Title', name: 'album-title', widget: 'string' }
-              - { label: 'Year', name: 'year', widget: 'string', hint: 'Year' }
-              - { label: 'Artwork', name: 'artwork', widget: 'image' }
-              - { label: 'Details & Track Listing', name: "details-track-listing", widget: 'markdown' }
+              - { label: 'Album Name', name: 'album-name', widget: 'string' }
+              - { label: 'Album Year', name: 'album-year', widget: 'string' }
+              - { label: 'Album Artwork', name: 'album-artwork', widget: 'image' }
+              - { label: 'Album Details & Track Listing', name: "album-details-track-listing", widget: 'markdown' }

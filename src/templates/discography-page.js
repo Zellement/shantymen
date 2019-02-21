@@ -50,11 +50,9 @@ export const DiscographyPageQuery = graphql`
           album_listing {
             album {
               cd_title
-              details_track_listing
             }
           }
         }
-        html
       }
     }
   }
