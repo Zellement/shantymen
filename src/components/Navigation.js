@@ -18,31 +18,31 @@ const Navigation = class extends React.Component {
     <nav className="navigation">
       <div className={`navigation__menu ${menuActive}`} >
         <div className="navigation__inside">
-          <Link className="navigation__item" to="/">
+          <Link className="navigation__item" activeClassName="active" to="/">
             Home
           </Link>
-          <Link className="navigation__item" to="/blog">
+          <Link className="navigation__item" activeClassName="active" to="/blog">
            Blog
           </Link>
-          <Link className="navigation__item" to="/about">
+          <Link className="navigation__item" activeClassName="active" to="/about">
             About
           </Link>
-          <Link className="navigation__item" to="/oddfellows-hall">
+          <Link className="navigation__item" activeClassName="active" to="/oddfellows-hall">
             Oddfellows Hall
           </Link>
-          <Link className="navigation__item" to="/discography">
+          <Link className="navigation__item" activeClassName="active" to="/discography">
             Discography
           </Link>
-          <Link className="navigation__item" to="/gigs">
+          <Link className="navigation__item" activeClassName="active" to="/gigs">
             Gigs
           </Link>
-          <Link className="navigation__item" to="/guestbook">
+          <Link className="navigation__item" activeClassName="active" to="/guestbook">
             Guestbook
           </Link>
-          <Link className="navigation__item" to="/gallery">
+          <Link className="navigation__item" activeClassName="active" to="/gallery">
             Gallery
           </Link>
-          <Link className="navigation__item" to="/book-us">
+          <Link className="navigation__item" activeClassName="active" to="/book-us">
             Book Us
           </Link>
         </div>

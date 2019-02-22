@@ -4,18 +4,17 @@
 
 		&__burger {
 			width: 50px;
-			height: 45px;
+			height: 50px;
 			display: block;
 			position: fixed;
 			top: 0;
 			right: 0;
 			z-index: 10;
 			background: darken($deep-blue,10);
-			padding: 10px;
+			padding: 13px 13px 10px 13px;
 		}
 
 		&__burger-inside {
-			padding: 10px;
 			position: relative;
 		}
 
@@ -60,12 +59,12 @@
 
 		&__burger-inside.is-active span:nth-child(1) {
 		  left: 3px;
-		  top: 6px;
+		  top: 7px;
 		}
 
 		&__burger-inside.is-active span:nth-child(2) {
 		  left: calc(50% - 3px);
-		  top: 6px;
+		  top: 7px;
 		}
 
 		&__burger-inside.is-active span:nth-child(3) {
@@ -80,12 +79,12 @@
 
 		&__burger-inside.is-active span:nth-child(5) {
 		  left: 3px;
-		  top: 15px;
+		  top: 13px;
 		}
 
 		&__burger-inside.is-active span:nth-child(6) {
 		  left: calc(50% - 3px);
-		  top: 15px;
+		  top: 13px;
 		}
 
 		&__menu {
@@ -97,7 +96,7 @@
 		  bottom: 0;
 		  width: 100%;
 		  height: 100%;
-		  padding: 20px;
+		  padding: 25px;
 		  background: rgba($deep-blue,0.8);
 		  opacity: 0;
 		  transition: .5s;
@@ -110,7 +109,7 @@
 
 		&__inside {
 		  background: rgba($deep-blue,1);
-		  padding: 20px;
+		  padding: 25px;
 		}
 
 
@@ -122,6 +121,11 @@
 			text-decoration: none;
 			text-align: center;
 			border-bottom: 1px solid lighten($deep-blue,10);
+		}
+
+		&__item.active {
+			background: darken($deep-blue,10);
+			color: lighten($deep-blue,30);
 		}
 
 	}
