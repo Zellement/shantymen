@@ -11,6 +11,7 @@
 			right: 0;
 			z-index: 10;
 			background: darken($deep-blue,10);
+			cursor: pointer;
 			padding: 13px 13px 10px 13px;
 		}
 
@@ -91,36 +92,34 @@
 		  position: fixed;
 		  z-index: -1;
 		  top: 0;
-		  left: 0;
-		  right: 0;
+		  left: -220vw;
 		  bottom: 0;
 		  width: 100%;
 		  height: 100%;
-		  padding: 25px;
+		  padding: 50px 50px 50px 0;
 		  background: rgba($deep-blue,0.8);
-		  opacity: 0;
 		  transition: .5s;
 		}
 
 		&__menu.is-active {
-		  opacity: 1;
+			left: 0;
 			z-index: 9;
 		}
 
-		&__inside {
-		  background: rgba($deep-blue,1);
-		  padding: 25px;
+		&__list {
+			list-style: none;
 		}
 
-
 		&__item {
+			padding: 7px;
 			display: block;
 			color: $blanc;
 			width: 100%;
-			padding: 8px;
 			text-decoration: none;
 			text-align: center;
 			border-bottom: 1px solid lighten($deep-blue,10);
+		  background: darken($deep-blue,5);
+			background: linear-gradient(82deg, darken($deep-blue,5) 0%, darken($deep-blue,0) 100%);
 		}
 
 		&__item.active {
@@ -132,12 +131,90 @@
 
 	@include bp800 {
 
+		background: darken($deep-blue,10);
+		position: relative;
+		width: 100%;
+
+		&__menu {
+		  transition: 0s;
+		  background: none;
+		}
+
 		&__burger {
 			display: none;
 		}
 
-		position: relative;
+		&__list {
+			list-style: none;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		&__list-item {
+			display: inline-block;
+		}
+
+		&__item {
+			display: block;
+			color: $blanc;
+			text-decoration: none;
+			padding: 10px;
+			border-top: 2px solid lighten($deep-blue,10);
+			margin: 0 2px;
+			transition: .3s;
+			&:hover {
+				border-color: $orange;
+			}
+		}
+
+		&__item.active {
+			border-color: $blanc;
+		}
+
+		&__inside {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	@include bp1200 {
+
 		float: right;
+		width: 70%;
+		background: none;
+		padding-top: 50px;
+
+		&__inside {
+			display: flex;
+			width: 100%;
+		}
+
+		&__list {
+			margin-left: auto;
+			width: auto;
+			display: inline-block;
+		}
+
+		&__item {
+			padding: 20px 12px;
+			border-top: none;
+			border-bottom: 2px solid lighten($deep-blue,10);
+		}
+
+		&__item.active {
+			border-color: $blanc;
+		}
+
+	}
+
+@include bp1400 {
+
+
+		&__item {
+			padding: 20px 20px;
+		}
+
 	}
 
 }

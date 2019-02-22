@@ -18,33 +18,35 @@ const Navigation = class extends React.Component {
     <nav className="navigation">
       <div className={`navigation__menu ${menuActive}`} >
         <div className="navigation__inside">
-          <Link className="navigation__item" activeClassName="active" to="/">
+        <ul className="navigation__list">
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/">
             Home
-          </Link>
-          <Link className="navigation__item" activeClassName="active" to="/blog">
+          </Link></li>
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/blog">
            Blog
-          </Link>
-          <Link className="navigation__item" activeClassName="active" to="/about">
+          </Link></li>
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/about">
             About
-          </Link>
-          <Link className="navigation__item" activeClassName="active" to="/oddfellows-hall">
+          </Link></li>
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/oddfellows-hall">
             Oddfellows Hall
-          </Link>
-          <Link className="navigation__item" activeClassName="active" to="/discography">
+          </Link></li>
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/discography">
             Discography
-          </Link>
-          <Link className="navigation__item" activeClassName="active" to="/gigs">
+          </Link></li>
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/gigs">
             Gigs
-          </Link>
-          <Link className="navigation__item" activeClassName="active" to="/guestbook">
+          </Link></li>
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/guestbook">
             Guestbook
-          </Link>
-          <Link className="navigation__item" activeClassName="active" to="/gallery">
+          </Link></li>
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/gallery">
             Gallery
-          </Link>
-          <Link className="navigation__item" activeClassName="active" to="/book-us">
+          </Link></li>
+          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/book-us">
             Book Us
-          </Link>
+          </Link></li>
+          </ul>
         </div>
       </div>
       <div className={`navigation__burger burger ${burgerActive}`} onClick={this.toggleMenu}>

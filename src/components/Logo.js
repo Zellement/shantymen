@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from 'gatsby'
 import logo from '../img/logo-badge.png'
 import logo_text from '../img/logo-text.png'
-import '../scss/layout/logo.scss'
 
 const Logo = () => (
 	<Link to="/" className="logo" title="Logo">
