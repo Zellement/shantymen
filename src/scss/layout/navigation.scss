@@ -1,0 +1,139 @@
+.navigation {
+
+	@media (max-width: 799px) {
+
+		&__burger {
+			width: 50px;
+			height: 45px;
+			display: block;
+			position: fixed;
+			top: 0;
+			right: 0;
+			z-index: 10;
+			background: darken($deep-blue,10);
+			padding: 10px;
+		}
+
+		&__burger-inside {
+			padding: 10px;
+			position: relative;
+		}
+
+		&__burger-inside span {
+		  display: block;
+		  position: absolute;
+		  height: 4px;
+		  width: 50%;
+		  background: $blanc;
+		  opacity: 1;
+		  transform: rotate(0deg);
+		  transition: .25s ease-in-out;
+		}
+
+		&__burger-inside span:nth-child(odd) {
+		  left: 0px;
+		}
+
+		&__burger-inside span:nth-child(even) {
+		  left: 50%;
+		}
+
+		&__burger-inside span:nth-child(1), &__burger-inside span:nth-child(2) {
+		  top: 0px;
+		}
+
+		&__burger-inside span:nth-child(3), &__burger-inside span:nth-child(4) {
+		  top: 10px;
+		}
+
+		&__burger-inside span:nth-child(5), &__burger-inside span:nth-child(6) {
+		  top: 20px;
+		}
+
+		&__burger-inside.is-active span:nth-child(1),&__burger-inside.is-active span:nth-child(6) {
+		  transform: rotate(45deg);
+		}
+
+		&__burger-inside.is-active span:nth-child(2),&__burger-inside.is-active span:nth-child(5) {
+		  transform: rotate(-45deg);
+		}
+
+		&__burger-inside.is-active span:nth-child(1) {
+		  left: 3px;
+		  top: 6px;
+		}
+
+		&__burger-inside.is-active span:nth-child(2) {
+		  left: calc(50% - 3px);
+		  top: 6px;
+		}
+
+		&__burger-inside.is-active span:nth-child(3) {
+		  left: -50%;
+		  opacity: 0;
+		}
+
+		&__burger-inside.is-active span:nth-child(4) {
+		  left: 100%;
+		  opacity: 0;
+		}
+
+		&__burger-inside.is-active span:nth-child(5) {
+		  left: 3px;
+		  top: 15px;
+		}
+
+		&__burger-inside.is-active span:nth-child(6) {
+		  left: calc(50% - 3px);
+		  top: 15px;
+		}
+
+		&__menu {
+		  position: fixed;
+		  z-index: -1;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  width: 100%;
+		  height: 100%;
+		  padding: 20px;
+		  background: rgba($deep-blue,0.8);
+		  opacity: 0;
+		  transition: .5s;
+		}
+
+		&__menu.is-active {
+		  opacity: 1;
+			z-index: 9;
+		}
+
+		&__inside {
+		  background: rgba($deep-blue,1);
+		  padding: 20px;
+		}
+
+
+		&__item {
+			display: block;
+			color: $blanc;
+			width: 100%;
+			padding: 8px;
+			text-decoration: none;
+			text-align: center;
+			border-bottom: 1px solid lighten($deep-blue,10);
+		}
+
+	}
+
+	@include bp800 {
+
+		&__burger {
+			display: none;
+		}
+
+		position: relative;
+		float: right;
+	}
+
+}

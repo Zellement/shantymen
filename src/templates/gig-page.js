@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const GigPageTemplate = ({ data, title, content, contentComponent }) => {
+export const GigPageTemplate = ({ data, content, contentComponent }) => {
   //console.log(data)
   const PageContent = contentComponent || Content
     return (
@@ -28,11 +28,11 @@ const GigPage = ({ data }) => {
       />
 
           {data.allMarkdownRemark.edges[0].node.frontmatter.gig_listing.map(gigdata => (
-            <div>
-            <h3>{gigdata.date}</h3>
-            <h3>{gigdata.time}</h3>
-            <h3>{gigdata.location}</h3>
-            <div>{gigdata.details}</div>
+            <div key={gigdata.date + gigdata.time}>
+              <h3 key={gigdata.date}>{gigdata.date}</h3>
+              <h3 key={gigdata.time}>{gigdata.time}</h3>
+              <h3 key={gigdata.location}>{gigdata.location}</h3>
+              <div key={gigdata.details}>{gigdata.details}</div>
             </div>
           ))}
     </Layout>
@@ -40,7 +40,7 @@ const GigPage = ({ data }) => {
 }
 
 GigPageTemplate.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object,
 }
 
 export default GigPage
@@ -52,6 +52,7 @@ export const GigPageQuery = graphql`
     edges {
       node {
         html
+        id
         frontmatter {
           gig_listing {
             date
