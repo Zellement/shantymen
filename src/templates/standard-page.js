@@ -9,9 +9,7 @@ export const StandardPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section>
-      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-        {title}
-      </h2>
+      <h1>{title}</h1>
       <PageContent className="content" content={content} />
     </section>
   )

@@ -1,9 +1,13 @@
-@import "/base/variables.scss";
-@import "/base/reset.scss";
-@import "/base/core.scss";
-@import "/base/breakpoints.scss";
-@import "/base/flexbox.scss";
-@import "/base/containers.scss";
+@import
+	"/base/variables.scss", 
+	"/base/reset.scss", 
+	"/base/core.scss", 
+	"/base/breakpoints.scss", 
+	"/base/flexbox.scss", 
+	"/base/typography.scss", 
+	"/base/containers.scss";
 
-@import "/layout/header.scss";
-@import "/layout/navigation.scss";
+@import
+	"/layout/header.scss",
+	"/layout/navigation.scss",
+	"/layout/main-content.scss";
