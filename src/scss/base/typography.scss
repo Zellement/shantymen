@@ -2,6 +2,7 @@ h1, h2, h3, h4, h4 {
 	font-family: "Source Serif Pro", serif;
 	color: $deep-blue;
 	position: relative;
+	font-weight: normal;
 	&:after {
 		content: '';
 		display: block;

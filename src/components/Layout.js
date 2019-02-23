@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from '../components/Header'
 import '../scss/master.scss'
-import '../spotify.md'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
