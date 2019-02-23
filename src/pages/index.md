@@ -7,3 +7,5 @@ During 1988 a group of local lifeboat men and friends formed a shanty singing gr
 Over the next 28 years the group developed their own style of performing songs of the sea constantly refining their music and always trying to entertain the public and raising funds for charity.
 
 Although the groups members nowadays are from a variety of occupations but they have remained true to their roots and still maintain a very close connection with the RNLI.
+
+https://open.spotify.com/artist/06bi895n8wIOUi35sk65gJ
