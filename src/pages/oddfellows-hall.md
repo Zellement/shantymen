@@ -2,9 +2,9 @@
 templateKey: standard-page
 title: Oddfellows Hall
 ---
-# Oddfellows Hall~ Home of the Sheringham Shantymen
+# Home of the Sheringham Shantymen
 
-and available for hire
+**Available for hire!**
 
 The Hall is a stunning place to hold meetings and functions venue in the heart of Sheringham
 
