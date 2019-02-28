@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+//import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -17,7 +17,7 @@ export const StandardPageTemplate = ({ title, content, contentComponent, mainima
           <PageContent className="content" content={content} />
         </div>
         <aside className="aside">
-          <Img fluid={mainimage} />
+          {/*<Img fluid={mainimage} />*/}
           <SpotifyPlayer />
         </aside>
       </div>
