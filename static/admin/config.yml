@@ -15,6 +15,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Main Image", name: "image", widget: "image"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -37,6 +38,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/oddfellows-hall.md"
         label: "Oddfellows Hall"
@@ -44,6 +46,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/gigs.md"
         label: "Gigs"
@@ -51,6 +54,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
           - label: 'Gig Listing'
             name: 'gig-listing'
@@ -66,6 +70,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/gallery.md"
         label: "Gallery"
@@ -73,6 +78,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Gallery", name: "gallery", widget: "image"}
       - file: "src/pages/discography.md"
@@ -81,6 +87,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
           - label: 'Shantymen Albums'
             name: 'shantymen-albums'

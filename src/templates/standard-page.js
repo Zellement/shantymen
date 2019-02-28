@@ -10,14 +10,13 @@ export const StandardPageTemplate = ({ title, content, contentComponent, mainima
 
   return (
     <section>
-    <div className="container flex800">
-    <Img fluid={mainimage} />
-      <div className="copy">
+      <div className="flex800 main-content">
+        <div className="copy">
           <h1>{title}</h1>
           <PageContent className="content" content={content} />
         </div>
         <aside className="aside">
-        This is an aside
+          <Img fluid={mainimage} />
         </aside>
       </div>
     </section>
@@ -59,8 +58,8 @@ export const StandardPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              src
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
