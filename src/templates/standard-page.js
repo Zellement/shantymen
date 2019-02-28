@@ -40,7 +40,7 @@ const StandardPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        mainimage={post.frontmatter.image.childImageSharp.fluid}
+        //mainimage={post.frontmatter.image.childImageSharp.fluid}
       />
     </Layout>
   )
