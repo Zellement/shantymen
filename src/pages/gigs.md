@@ -15,8 +15,6 @@ gig-listing:
     location: 'St Peters Church, Sheringham'
     time: 19.30 hrs
 ---
-# Gigs
-
 These are the gigs which we have agreed for 2019 to date.
 
 They are updated as and when new information  is to hand.
