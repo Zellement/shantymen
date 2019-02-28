@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import SpotifyPlayer from "../components/SpotifyPlayer"
 
 export const StandardPageTemplate = ({ title, content, contentComponent, mainimage }) => {
   const PageContent = contentComponent || Content
@@ -17,6 +18,7 @@ export const StandardPageTemplate = ({ title, content, contentComponent, mainima
         </div>
         <aside className="aside">
           <Img fluid={mainimage} />
+          <SpotifyPlayer />
         </aside>
       </div>
     </section>
@@ -58,7 +60,7 @@ export const StandardPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 800, maxHeight: 400) {
               ...GatsbyImageSharpFluid
             }
           }

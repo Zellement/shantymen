@@ -1,27 +1,7 @@
 import React from "react"
 
-import { StaticQuery, graphql } from "gatsby"
-import "../content/spotify.md";
-
-export default SpotifyPlayer () => (
-  <StaticQuery
-    query={graphql`
-      query SpotifyPlayerQuery {
-        allMarkdownRemark(filter: {frontmatter: {title: {eq: "Spotify"}}}) {
-		    edges {
-		      node {
-		        frontmatter {
-		        	title
-		        }
-		      }
-		    }
-		  }
-      }
-    `}
-    render={data => (
-      <div>
-        {data.allMarkdownRemark.edges[0].node.frontmatter.title}
-      <div>
-    )}
-  />
+const SpotifyPlayer = () => (
+    <iframe src="https://open.spotify.com/embed/artist/06bi895n8wIOUi35sk65gJ" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 )
+
+export default SpotifyPlayer

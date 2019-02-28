@@ -5,10 +5,11 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-
+  // We want to not make pages from anything with a templateKey of "content"
   return graphql(`
+
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(filter:{frontmatter:{templateKey:{ne:"content"}}}) {
         edges {
           node {
             id

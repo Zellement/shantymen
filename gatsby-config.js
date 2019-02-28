@@ -32,6 +32,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/content`,
+        name: 'content',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
@@ -43,13 +50,6 @@ module.exports = {
       options: {
         plugins: [
         "gatsby-plugin-netlify-cms-paths",
-          {
-            resolve: "gatsby-remark-embed-spotify",
-            options: {
-              //width: 800, // default is "100%"
-              //height: 600 // default is 400
-            }
-          },
           {
             resolve: 'gatsby-remark-relative-images',
             options: {
