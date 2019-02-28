@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const StandardPageTemplate = ({ title, content, contentComponent }) => {
+export const StandardPageTemplate = ({ title, content, contentComponent, mainimage }) => {
   const PageContent = contentComponent || Content
 
   return (
     <section>
     <div className="container flex800">
+    <Img fluid={mainimage} />
       <div className="copy">
-          <h1>
-            {title}
-          </h1>
+          <h1>{title}</h1>
           <PageContent className="content" content={content} />
         </div>
         <aside className="aside">
@@ -39,6 +39,7 @@ const StandardPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        mainimage={post.frontmatter.image.childImageSharp.fluid}
       />
     </Layout>
   )
@@ -56,7 +57,15 @@ export const StandardPageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              src
+            }
+          }
+        }
       }
     }
   }
+
 `
