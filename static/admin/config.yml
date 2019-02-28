@@ -30,6 +30,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Main Image", name: "image", widget: "image"}
       - file: "src/pages/about.md"
         label: "About"
         name: "about"
