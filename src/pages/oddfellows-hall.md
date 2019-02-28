@@ -1,6 +1,7 @@
 ---
 templateKey: standard-page
 title: Oddfellows Hall
+image: /img/april-update.jpg
 ---
 # Home of the Sheringham Shantymen
 
