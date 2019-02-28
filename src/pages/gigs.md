@@ -1,6 +1,7 @@
 ---
 templateKey: gig-page
 title: Gigs
+image: /img/april-update.jpg
 gig-listing:
   - date: Saturday 2nd Mar 2019
     details: "Shantymen in Concert\r\n\n2 x 45 min sessions\r\n\nPrivate Gig"
