@@ -28,8 +28,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gig-listing"}
-      - {label: "Title", name: "title", widget: "datetime"}
       - {label: "Location", name: "location", widget: "string"}
+      - {label: "Date / Time", name: "date", widget: "datetime"}
       - {label: "Details", name: "details", widget: "text"}
 
   - name: "pages"
