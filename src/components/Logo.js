@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
 import logo from '../img/logo-badge.png'
-import logo_text from '../img/logo-text.png'
+//import logo_text from '../img/logo-text.png'
 
 const Logo = () => (
 	<Link to="/" className="logo" title="Logo">
