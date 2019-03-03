@@ -1,5 +1,5 @@
 header {
-	background: $deep-blue;
+	background: rgba($blanc,.7);
 }
 
 .logo {
@@ -14,6 +14,17 @@ header {
 		width: 100%;
 		height: auto;
 		max-width: 100%;
+	}
+}
+
+@include bp800 {
+
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
 	}
 }
 

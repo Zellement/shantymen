@@ -10,3 +10,15 @@
 		max-width: $x-large-width;
 	}
 }
+
+@include bp800 {
+	.container {
+		&--primary {
+			&:before {
+				height: 230px;
+				display: block;
+				content: '';
+			}
+		}
+	}
+}
