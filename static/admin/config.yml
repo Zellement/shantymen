@@ -25,9 +25,8 @@ collections:
     label: "Gigs"
     folder: "src/gigs"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gig-listing"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Location", name: "location", widget: "string"}
       - {label: "Date / Time", name: "date", widget: "datetime"}
       - {label: "Details", name: "details", widget: "text"}
