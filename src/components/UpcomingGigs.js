@@ -7,6 +7,10 @@ export default () => (
         query 
         {
           allMarkdownRemark(
+          sort: {
+            fields: [frontmatter___datetime]
+            order: DESC
+          }
             limit: 3
             filter: {frontmatter: {templateKey: {eq: "gig-listing"}}}
             ) {
@@ -16,7 +20,7 @@ export default () => (
                 id
                 frontmatter {
                   location
-                  date
+                  datetime
                   details
                 }
               }
@@ -27,9 +31,9 @@ export default () => (
 	    render={data => (
           <div>
             {data.allMarkdownRemark.edges.map(gigdata => (
-              <div key={gigdata.node.frontmatter.location + gigdata.node.frontmatter.date}>
-                <h3 key={gigdata.node.frontmatter.location}>{gigdata.node.frontmatter.location}</h3>
-                <h3 key={gigdata.node.frontmatter.date}>{gigdata.node.frontmatter.date}</h3>
+              <div key={gigdata.node.frontmatter.location + gigdata.node.frontmatter.datetime}>
+                <h3 key={gigdata.node.frontmatter.datetime}>{gigdata.node.frontmatter.datetime}</h3>
+                <h4 key={gigdata.node.frontmatter.location}>{gigdata.node.frontmatter.location}</h4>
               </div>
             ))}
           </div>
