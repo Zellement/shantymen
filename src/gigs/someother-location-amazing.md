@@ -1,7 +1,7 @@
 ---
 templateKey: gig-listing
 location: 'Someother Location, Amazing'
-date: 2019-09-12T18:28:54.054Z
+date: 'September 12, 2019 7:28 PM'
 details: 'sdfsdfsd sd sdfs df sdf '
 ---
 
