@@ -9,7 +9,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
 
     {
-      allMarkdownRemark(filter:{frontmatter:{templateKey:{ne:"content"}}}) {
+      allMarkdownRemark(filter:{frontmatter:{templateKey:{ne:"gig-listing"}}}) {
         edges {
           node {
             id
