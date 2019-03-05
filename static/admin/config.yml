@@ -27,9 +27,9 @@ collections:
     create: true
     identifier_field: location
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gig-listing"}
       - {label: "Location", name: "location", widget: "string"}
-      - {label: "Date / Time", name: "date", widget: "datetime"}
+      - {label: "Date / Time", name: "datetime", widget: "datetime", format: "LLLL"}
       - {label: "Details", name: "details", widget: "text"}
 
   - name: "pages"
