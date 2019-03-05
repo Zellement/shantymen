@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: gig-listing
 location: This should be first
 datetime: 'Wednesday, March 6, 2019 7:54 PM'
 details: Yeah first!
