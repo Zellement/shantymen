@@ -1,7 +1,7 @@
 ---
 templateKey: gig-listing
 location: Some location Somewhere
-date: 2019-05-14T18:28:15.050Z
+date: 'May 14, 2019 7:28 PM'
 details: This is a test
 ---
 
