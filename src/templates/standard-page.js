@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SpotifyPlayer from "../components/SpotifyPlayer"
 import UpcomingGigs from "../components/UpcomingGigs"
 
-export const StandardPageTemplate = ({ title, content, contentComponent, mainimage }) => {
+export const StandardPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -19,7 +18,6 @@ export const StandardPageTemplate = ({ title, content, contentComponent, mainima
         </div>
         <aside className="aside">
         <UpcomingGigs />
-          <Img fluid={mainimage} />
           <SpotifyPlayer />
         </aside>
       </div>
@@ -42,7 +40,6 @@ const StandardPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        mainimage={post.frontmatter.image.childImageSharp.fluid}
       />
     </Layout>
   )
@@ -60,13 +57,6 @@ export const StandardPageQuery = graphql`
       html
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 800, maxHeight: 400) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
