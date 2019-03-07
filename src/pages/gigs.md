@@ -1,5 +1,5 @@
 ---
-templateKey: gig-page
+templateKey: standard-page
 title: Gigs
 image: /img/april-update.jpg
 ---
