@@ -67,14 +67,6 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - label: 'Gig Listing'
-            name: 'gig-listing'
-            widget: 'list'
-            fields:
-              - { label: 'Date', name: 'date', widget: 'date', format: 'dddd Do MMM YYYY' }
-              - { label: 'Time', name: 'time', widget: 'string' }
-              - { label: 'Location', name: 'location', widget: 'string' }
-              - { label: 'Details', name: "details", widget: 'markdown' }
       - file: "src/pages/guestbook.md"
         label: "Guestbook"
         name: "guestbook"
