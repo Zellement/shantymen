@@ -29,6 +29,9 @@ shantymen-albums:
       22. New York Girls
       23. Santiano
     album-name: Off Quay
+    album-tracks:
+      - The Woolfleet Chorus
+      - null
     album-year: '2016'
 ---
 
