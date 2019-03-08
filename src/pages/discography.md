@@ -4,7 +4,30 @@ title: Discography
 image: /img/april-update.jpg
 shantymen-albums:
   - album-artwork: /img/offquay.jpg
-    album-details-track-listing: "1. The Woolfleet Chorus\r\n2. Liverpool Lou\r\n3. Sally Brown\r\n4. Blue Nose\r\n5. Mary Ellen Carter\r\n6. My Son John\r\n7. Good Ship Ragamuffin\r\n8. The Smuggler\r\n9. 25 Years\r\n10. Guns & Drums\r\n11. Randy Dandy Oh\r\n12. No Hopers\r\n13. The Outside Track\r\n14. The Day of the Clipper\r\n15. Windy Harbour\r\n16. Lumpers Life\r\n17. Donegal Danny\r\n18. Shoals Of Herring\r\n19. Up She Rises\r\n20. Keep Hauling\r\n21. Pay Me\r\n22. New York Girls\r\n23. Santiano"
+    album-details-track-listing: |-
+      1. The Woolfleet Chorus
+      2. Liverpool Lou
+      3. Sally Brown
+      4. Blue Nose
+      5. Mary Ellen Carter
+      6. My Son John
+      7. Good Ship Ragamuffin
+      8. The Smuggler
+      9. 25 Years
+      10. Guns & Drums
+      11. Randy Dandy Oh
+      12. No Hopers
+      13. The Outside Track
+      14. The Day of the Clipper
+      15. Windy Harbour
+      16. Lumpers Life
+      17. Donegal Danny
+      18. Shoals Of Herring
+      19. Up She Rises
+      20. Keep Hauling
+      21. Pay Me
+      22. New York Girls
+      23. Santiano
     album-name: Off Quay
     album-year: '2016'
 ---
