@@ -1,45 +1,37 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import { HTMLContent } from '../components/Content'
+import SpotifyPlayer from "../components/SpotifyPlayer"
 
-export const DiscographyPageTemplate = ({ data, content, contentComponent }) => {
-  //console.log(data)
-  const PageContent = contentComponent || Content
-    return (
-      <section>
-        <PageContent content={content} />
-      </section>
-    )
-}
+function DiscographyPage({ data }) {
 
-DiscographyPageTemplate.propTypes = {
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
+  const post = data.allMarkdownRemark.edges[0].node
 
-const DiscographyPage = ({ data }) => {
   return (
     <Layout>
-      <DiscographyPageTemplate
-        contentComponent={HTMLContent}
-        content={data.allMarkdownRemark.edges[0].node.html}
-      />
-
-          {data.allMarkdownRemark.edges[0].node.frontmatter.shantymen_albums.map(albumdata => (
+      <section>
+        <div className="flex800 main-content">
+          <div className="copy">
+            <h1>{post.frontmatter.title}</h1>
+            <HTMLContent content={post.html} />
             <div>
-            <h3>{albumdata.album_name}</h3>
-            <h3>{albumdata.album_year}</h3>
-            <div>{albumdata.album_details_track_listing}</div>
+              {post.frontmatter.shantymen_albums.map(albumdata => (
+                <div>
+                <h3 key={albumdata.album_name}>{albumdata.album_name}</h3>
+                <h3 key={albumdata.album_year}>{albumdata.album_year}</h3>
+                <div><HTMLContent content={albumdata.album_details_track_listing} /></div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+          <aside className="aside">
+            <SpotifyPlayer />
+          </aside>
+        </div>
+      </section>
     </Layout>
   )
-}
-
-DiscographyPageTemplate.propTypes = {
-  data: PropTypes.object.isRequired,
 }
 
 export default DiscographyPage
@@ -56,6 +48,7 @@ export const DiscographyPageQuery = graphql`
             album_year
             album_details_track_listing
           }
+          title
         }
         html
       }
