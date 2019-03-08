@@ -1,7 +1,7 @@
 ---
 templateKey: gig-listing
 title: Off Quay
-release-year: '2019'
+release-year: '2016'
 artwork: /img/offquay.jpg
 ---
 1. The Woolfleet Chorus
