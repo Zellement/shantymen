@@ -4,6 +4,20 @@ module.exports = {
     description: 'The Shantymen travel widely throughout the UK and Ireland supporting Lifeboat Stations in their fundraising efforts and are always considering how they can help in others to raise funds by performing concerts.',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Sheringham Shantymen",
+        short_name: "Shantymen",
+        start_url: "/",
+        background_color: "#172957",
+        theme_color: "#FAC43E",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        icon: "src/img/logo-badge.png", // This path is relative to the root of the site.
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
