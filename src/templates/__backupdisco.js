@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import SpotifyPlayer from "../components/SpotifyPlayer"
-import AlbumListing from "../components/AlbumListing"
 
 function DiscographyPage({ data }) {
 
@@ -16,7 +15,15 @@ function DiscographyPage({ data }) {
           <div className="copy">
             <h1>{post.frontmatter.title}</h1>
             <HTMLContent content={post.html} />
-            <AlbumListing />
+            <div>
+              {post.frontmatter.shantymen_albums.map(albumdata => (
+                <div>
+                <h3 key={albumdata.album_name}>{albumdata.album_name}</h3>
+                <h3 key={albumdata.album_year}>{albumdata.album_year}</h3>
+                <div><HTMLContent content={albumdata.album_details_track_listing} /></div>
+                </div>
+              ))}
+            </div>
           </div>
           <aside className="aside">
             <SpotifyPlayer />
@@ -36,6 +43,11 @@ export const DiscographyPageQuery = graphql`
     edges {
       node {
         frontmatter {
+          shantymen_albums {
+            album_name
+            album_year
+            album_details_track_listing
+          }
           title
         }
         html

@@ -7,9 +7,10 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
   // We want to not make pages from anything with a templateKey of "content"
   return graphql(`
-
     {
-      allMarkdownRemark(filter:{frontmatter:{templateKey:{ne:"gig-listing"}}}) {
+      allMarkdownRemark(filter:{
+        frontmatter:{templateKey:{nin:["gig-listing","album-listing"]}}
+      }) {
         edges {
           node {
             id

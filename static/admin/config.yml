@@ -7,33 +7,12 @@ public_folder: /img
 
 collections:
 
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Main Image", name: "image", widget: "image"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
-  - name: "gigs"
-    label: "Gigs"
-    folder: "src/gigs"
-    create: true
-    identifier_field: location
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gig-listing"}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "Date / Time", name: "datetime", widget: "datetime", format: "LLLL"}
-      - {label: "Details", name: "details", widget: "text"}
-
   - name: "pages"
     label: "Pages"
+    description: >
+      These are all the standard pages of the website.
+    editor:
+     preview: false
     files:
       - file: "src/pages/index.md"
         label: "Home"
@@ -92,12 +71,53 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - label: 'Shantymen Albums'
-            name: 'shantymen-albums'
-            widget: 'list'
-            fields:
-              - { label: 'Album Name', name: 'album-name', widget: 'string' }
-              - { label: 'Album Year', name: 'album-year', widget: 'string' }
-              - { label: 'Album Artwork', name: 'album-artwork', widget: 'image' }
-              - { label: 'Album Details & Track Listing', name: "album-details-track-listing", widget: 'markdown' }
-              - { label: 'Album Tracks', name: 'album-tracks', widget: 'list', field: {label: "Track Name", name: 'track-name', widget: string}}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    editor:
+     preview: false
+    description: >
+      These are all the blog posts.
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Main Image", name: "image", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "gigs"
+    label: "-- Gigs"
+    editor:
+     preview: false
+    description: >
+      This lists all the gigs that are displayed on the website.
+    label_singular: 'Gig'
+    folder: "src/gigs"
+    create: true
+    identifier_field: location
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gig-listing"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Date / Time", name: "datetime", widget: "datetime", format: "LLLL"}
+      - {label: "Details", name: "details", widget: "text"}
+
+  - name: "discography"
+    label: "-- Discography"
+    editor:
+     preview: false
+    description: >
+      This lists all the Shantymen albums.
+    label_singular: 'Discography'
+    folder: "src/discography"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gig-listing"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Release Year", name: "release-year", widget: "string"}
+      - {label: 'Artwork', name: 'artwork', widget: 'image' }
+      - {label: "Track Listing", name: "body", widget: "markdown"}

@@ -1,5 +1,5 @@
 ---
-templateKey: gig-listing
+templateKey: album-listing
 title: Off Quay
 release-year: '2016'
 artwork: /img/offquay.jpg
