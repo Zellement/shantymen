@@ -23,7 +23,9 @@ const AlbumListing = () => (
                   release_year
                   artwork {
                     childImageSharp {
-                      id
+                      fluid(maxWidth: 800) {
+                        ...GatsbyImageSharpFluid
+                      }
                     }
                   }
                 }
@@ -39,6 +41,7 @@ const AlbumListing = () => (
                 <h3 key={albumdata.node.frontmatter.title}>{albumdata.node.frontmatter.title}</h3>
                 <h3 key={albumdata.node.frontmatter.release_year}>{albumdata.node.frontmatter.release_year}</h3>
                 <HTMLContent content={albumdata.node.html} />
+                <Img fluid={albumdata.node.frontmatter.artwork.childImageSharp.fluid} />
               </div>
             ))}
           </div>
