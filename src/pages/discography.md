@@ -4,12 +4,7 @@ title: Discography
 image: /img/april-update.jpg
 shantymen-albums:
   - album-artwork: /img/offquay.jpg
-    album-name: Off Quay
-    album-tracks:
-      - The Woolfleet Chorus
-      - null
-    album-year: '2016'
-    body: |-
+    album-details-track-listing: |-
       1. The Woolfleet Chorus
       2. Liverpool Lou
       3. Sally Brown
@@ -33,6 +28,11 @@ shantymen-albums:
       21. Pay Me
       22. New York Girls
       23. Santiano
+    album-name: Off Quay
+    album-tracks:
+      - The Woolfleet Chorus
+      - null
+    album-year: '2016'
 ---
 
 CDs are available at concerts or by post from Graham Bell ~ Sheringham Shantymen Sales. Please call 01263 825 313, or email graham.bell@shantymen.com.
