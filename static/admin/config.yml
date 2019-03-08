@@ -100,3 +100,4 @@ collections:
               - { label: 'Album Year', name: 'album-year', widget: 'string' }
               - { label: 'Album Artwork', name: 'album-artwork', widget: 'image' }
               - { label: 'Album Details & Track Listing', name: "album-details-track-listing", widget: 'markdown' }
+              - { label: 'Album Tracks', name: 'album-tracks', widget: 'list', field: {label: "Track Name", name: 'track-name', widget: string}}
