@@ -1,13 +1,29 @@
 import React from "react"
 import { Link } from 'gatsby'
-import logo from '../img/logo-badge.png'
-//import logo_text from '../img/logo-text.png'
+import { StaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 const Logo = () => (
-	<Link to="/" className="logo" title="Logo">
-		<img className="logo__image" src={logo} alt="Sheringham Shantymen Badge" />
-		{/*<img className="logo__text" src={logo_text} alt="The Sheringham Shantymen" />*/}
-	</Link>
+  <StaticQuery
+      query={graphql`
+        query {
+          allImageSharp(filter:{id:{eq:"6f674a63-fcd6-518a-b3b9-99efd7357cef"}}) {
+            edges {
+              node {
+                fixed(width: 175, height: 175) {
+                  ...GatsbyImageSharpFixed_tracedSVG
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <Link to="/" className="logo" title="Logo">
+          <Img fixed={data.allImageSharp.edges[0].node.fixed} />
+        </Link>
+      )}
+    />
 )
 
 export default Logo
