@@ -1,5 +1,5 @@
 ---
-templateKey: gig-listing
+templateKey: album-listing
 title: All at Sea
 release-year: '2008'
 artwork: /img/all-at-sea.jpg

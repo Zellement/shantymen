@@ -116,7 +116,7 @@ collections:
     folder: "src/discography"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gig-listing"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "album-listing"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Release Year", name: "release-year", widget: "string"}
       - {label: 'Artwork', name: 'artwork', widget: 'image' }

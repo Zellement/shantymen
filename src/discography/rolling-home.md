@@ -1,5 +1,5 @@
 ---
-templateKey: gig-listing
+templateKey: album-listing
 title: Rolling Home
 release-year: '2001'
 artwork: /img/rolling.jpg

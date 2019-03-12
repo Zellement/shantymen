@@ -1,5 +1,5 @@
 ---
-templateKey: gig-listing
+templateKey: album-listing
 title: Songs for Seafarers
 release-year: '2003'
 artwork: /img/songs-seafarers.jpg

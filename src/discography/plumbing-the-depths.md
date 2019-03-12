@@ -1,5 +1,5 @@
 ---
-templateKey: gig-listing
+templateKey: album-listing
 title: Plumbing the Depths
 release-year: '2006'
 artwork: /img/plumbing-the-depths.jpg

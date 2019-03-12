@@ -1,5 +1,5 @@
 ---
-templateKey: gig-listing
+templateKey: album-listing
 title: The Shantymen at Home
 release-year: '2014'
 artwork: /img/shantymen-at-home.jpg
