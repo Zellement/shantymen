@@ -2,13 +2,17 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
-import SpotifyPlayer from "../components/SpotifyPlayer"
-import AlbumListing from "../components/AlbumListing"
-import Disqus from 'disqus-react'
+import { DiscussionEmbed, CommentCount } from "disqus-react";
 
 function GuestbookPage({ data }) {
 
   const post = data.allMarkdownRemark.edges[0].node
+
+  const disqusShortname = "shantymen";
+  const disqusConfig = {
+    identifier: post.id,
+    title: post.frontmatter.title
+  }
 
   return (
     <Layout>
@@ -17,11 +21,9 @@ function GuestbookPage({ data }) {
           <div className="copy">
             <h1>{post.frontmatter.title}</h1>
             <HTMLContent content={post.html} />
-            <AlbumListing />
+            <p>We've had <CommentCount shortname={disqusShortname} config={disqusConfig} />.</p>
+            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           </div>
-          <aside className="aside">
-            <SpotifyPlayer />
-          </aside>
         </div>
       </section>
     </Layout>
@@ -36,6 +38,7 @@ export const GuestbookPageQuery = graphql`
   allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "guestbook-page"}}}) {
     edges {
       node {
+        id
         frontmatter {
           title
         }
