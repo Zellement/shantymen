@@ -10,7 +10,7 @@ const Logo = () => (
           allImageSharp(filter:{id:{eq:"6f674a63-fcd6-518a-b3b9-99efd7357cef"}}) {
             edges {
               node {
-                fixed(width: 175, height: 175) {
+                fixed(width: 140, height: 140) {
                   ...GatsbyImageSharpFixed_tracedSVG
                 }
               }
@@ -20,7 +20,9 @@ const Logo = () => (
       `}
       render={data => (
         <Link to="/" className="logo" title="Logo">
-          <Img fixed={data.allImageSharp.edges[0].node.fixed} />
+          {data.allImageSharp.edges.map(logodata => (
+            <Img fixed={logodata.node.fixed} />
+          ))}
         </Link>
       )}
     />
