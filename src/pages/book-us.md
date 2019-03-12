@@ -1,5 +1,4 @@
 ---
-templateKey: standard-page
+templateKey: book-us-page
 title: Book Us
 ---
-# Book Us
