@@ -6,7 +6,7 @@ import SpotifyPlayer from "../components/SpotifyPlayer"
 import AlbumListing from "../components/AlbumListing"
 import Disqus from 'disqus-react'
 
-function DiscographyPage({ data }) {
+function GuestbookPage({ data }) {
 
   const post = data.allMarkdownRemark.edges[0].node
 
@@ -28,12 +28,12 @@ function DiscographyPage({ data }) {
   )
 }
 
-export default DiscographyPage
+export default GuestbookPage
 
-export const DiscographyPageQuery = graphql`
+export const GuestbookPageQuery = graphql`
   query 
 {
-  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "discography-page"}}}) {
+  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "guestbook-page"}}}) {
     edges {
       node {
         frontmatter {
