@@ -4,7 +4,6 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import SpotifyPlayer from "../components/SpotifyPlayer"
 import AlbumListing from "../components/AlbumListing"
-import Disqus from 'disqus-react'
 
 function DiscographyPage({ data }) {
 

@@ -23,8 +23,8 @@ const AlbumListing = () => (
                   release_year
                   artwork {
                     childImageSharp {
-                      fixed(width: 300, height: 300) {
-                        ...GatsbyImageSharpfixed
+                      fixed(width: 350, height: 350) {
+                        ...GatsbyImageSharpFixed
                       }
                     }
                   }
