@@ -10,10 +10,7 @@ const Logo = () => (
           allFile (filter:{relativePath:{eq:"logo-badge.png"}}){
             edges {
               node {
-                id
-                relativePath
                 childImageSharp {
-                  id
                   fixed(width: 150, height: 150) {
                     ...GatsbyImageSharpFixed_tracedSVG
                   }

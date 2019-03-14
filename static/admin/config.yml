@@ -38,6 +38,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Gallery", name: "gallery", widget: "image"}
       - file: "src/pages/gigs.md"
         label: "Gigs"
         name: "gigs"

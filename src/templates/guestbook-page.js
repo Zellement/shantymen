@@ -21,7 +21,6 @@ function GuestbookPage({ data }) {
           <div className="copy">
             <h1>{post.frontmatter.title}</h1>
             <HTMLContent content={post.html} />
-            <p>We've had <CommentCount shortname={disqusShortname} config={disqusConfig} />.</p>
             <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           </div>
         </div>
