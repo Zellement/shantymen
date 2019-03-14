@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
-import { DiscussionEmbed, CommentCount } from "disqus-react";
+import { DiscussionEmbed } from "disqus-react";
 
 function GuestbookPage({ data }) {
 

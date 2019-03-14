@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SpotifyPlayer from "../components/SpotifyPlayer"
-import UpcomingGigs from "../components/UpcomingGigs"
+import GigsUpcoming from "../components/GigsUpcoming"
 
 export const StandardPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -17,7 +17,7 @@ export const StandardPageTemplate = ({ title, content, contentComponent }) => {
           <PageContent className="content" content={content} />
         </div>
         <aside className="aside">
-        <UpcomingGigs />
+        <GigsUpcoming />
           <SpotifyPlayer />
         </aside>
       </div>

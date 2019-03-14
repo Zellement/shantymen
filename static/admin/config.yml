@@ -38,7 +38,6 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Gallery", name: "gallery", widget: "image"}
       - file: "src/pages/gigs.md"
         label: "Gigs"
         name: "gigs"
@@ -96,7 +95,7 @@ collections:
     editor:
      preview: false
     description: >
-      This lists all the gigs that are displayed on the website.
+      This lists all the gigs that are displayed on the website. Be aware the date will need to be entered twice - one for sorting chronologically, and one for displaying to end users
     label_singular: 'Gig'
     folder: "src/gigs"
     create: true
@@ -104,6 +103,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gig-listing"}
       - {label: "Location", name: "location", widget: "string"}
+      - {label: "Date", name: "date", widget: "date", format: "X"}
       - {label: "Date / Time", name: "datetime", widget: "datetime", format: "LLLL"}
       - {label: "Details", name: "details", widget: "text"}
 

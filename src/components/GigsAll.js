@@ -1,17 +1,16 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-const UpcomingGigs = () => (
+const GigsAll = () => (
 	<StaticQuery
 	    query={graphql`
         query 
         {
           allMarkdownRemark(
           sort: {
-            fields: [frontmatter___datetime]
-            order: DESC
+            fields: [frontmatter___date]
+            order: ASC
           }
-            limit: 3
             filter: {frontmatter: {templateKey: {eq: "gig-listing"}}}
             ) {
             edges {
@@ -20,6 +19,7 @@ const UpcomingGigs = () => (
                 id
                 frontmatter {
                   location
+                  date
                   datetime
                   details
                 }
@@ -41,4 +41,4 @@ const UpcomingGigs = () => (
 	  />
 )
 
-export default UpcomingGigs
+export default GigsAll
