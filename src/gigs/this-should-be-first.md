@@ -1,7 +1,8 @@
 ---
 templateKey: gig-listing
-location: This should be first
-datetime: 'Wednesday, March 6, 2019 7:54 PM'
+location: July gig
+date: '1563571031'
+datetime: 'Friday, July 19, 2019 7:54 PM'
 details: Yeah first!
 ---
 
