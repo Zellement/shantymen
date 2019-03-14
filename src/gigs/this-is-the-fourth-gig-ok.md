@@ -1,7 +1,8 @@
 ---
 templateKey: gig-listing
-location: 'This is the fourth gig, OK'
-datetime: 'Tuesday, July 21, 2020 9:23 PM'
+location: A March gig
+date: '1552521600'
+datetime: 'Saturday, March 14, 2020 9:23 PM'
 details: Testing 1 2 3
 ---
 
