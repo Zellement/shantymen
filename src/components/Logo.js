@@ -12,7 +12,7 @@ const Logo = () => (
               node {
                 childImageSharp {
                   fixed(width: 150, height: 150) {
-                    ...GatsbyImageSharpFixed_tracedSVG
+                    ...GatsbyImageSharpFixed_withWebp_tracedSVG
                   }
                 }
               }

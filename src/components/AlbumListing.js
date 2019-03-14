@@ -24,7 +24,7 @@ const AlbumListing = () => (
                   artwork {
                     childImageSharp {
                       fixed(width: 150, height: 150) {
-                        ...GatsbyImageSharpFixed
+                        ...GatsbyImageSharpFixed_withWebp_tracedSVG
                       }
                     }
                   }
