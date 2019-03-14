@@ -7,11 +7,12 @@ const Logo = () => (
   <StaticQuery
       query={graphql`
       {
-        allFile(filter:{id:{eq: "f5d3a3b6-81d7-54d2-96e6-2999ed2301b3"}}) {
+        allFile(filter:{extension:{eq: "png"}}) {
           edges {
             node {
               childImageSharp {
-                fixed(width: 175, height: 175) {
+                id
+                fixed(width: 150, height: 150) {
                   ...GatsbyImageSharpFixed_tracedSVG
                 }
               }
@@ -22,7 +23,7 @@ const Logo = () => (
       `}
       render={data => (
         <Link to="/" className="logo" title="Logo">
-            <Img fixed={data.allFile.edges[0].node.childImageSharp.fixed} />
+            <Img fixed={data.allFile.edges[1].node.childImageSharp.fixed} />
         </Link>
       )}
     />
