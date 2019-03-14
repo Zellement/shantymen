@@ -6,24 +6,26 @@ import Img from 'gatsby-image'
 const Logo = () => (
   <StaticQuery
       query={graphql`
-      {
-        allFile(filter:{extension:{eq: "png"}}) {
-          edges {
-            node {
-              childImageSharp {
+        {
+          allFile (filter:{relativePath:{eq:"logo-badge.png"}}){
+            edges {
+              node {
                 id
-                fixed(width: 150, height: 150) {
-                  ...GatsbyImageSharpFixed_tracedSVG
+                relativePath
+                childImageSharp {
+                  id
+                  fixed(width: 150, height: 150) {
+                    ...GatsbyImageSharpFixed_tracedSVG
+                  }
                 }
               }
             }
           }
         }
-      }
       `}
       render={data => (
         <Link to="/" className="logo" title="Logo">
-            <Img fixed={data.allFile.edges[1].node.childImageSharp.fixed} />
+            <Img fixed={data.allFile.edges[0].node.childImageSharp.fixed} />
         </Link>
       )}
     />
