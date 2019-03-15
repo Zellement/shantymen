@@ -2,7 +2,10 @@
 templateKey: standard-page
 title: Oddfellows Hall
 image: /img/april-update.jpg
-gallery: /img/all-at-sea.jpg
+galleryImages:
+  - /img/141005-shantymen-0361.jpg
+  - /img/141005-shantymen-0371.jpg
+  - /img/141005-shantymen-0381.jpg
 ---
 # Home of the Sheringham Shantymen
 
