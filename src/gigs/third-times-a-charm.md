@@ -1,8 +1,11 @@
 ---
 templateKey: gig-listing
-location: April gig
-date: '1555622188'
-datetime: 'Thursday, April 18, 2019 12:00 AM'
-details: Uh huh
+location: 'The Dabbling Duck, Great Massingham'
+date: '1552688188'
+datetime: 'Friday, March 15, 2019 6:30 PM'
+details: |-
+  The Dabbling Duck, Great Massingham
+  Public Event
+  2 x 45 min sessions
 ---
 
