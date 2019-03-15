@@ -1,8 +1,11 @@
 ---
 templateKey: gig-listing
-location: May gig
-date: '1558127814'
-datetime: 'Friday, May 17, 2019 7:55 PM'
-details: 'Oooh, second!'
+location: 'Norfolk Punt Club, Neatishead Village Hall'
+date: '1551565014'
+datetime: 'Saturday, March 2, 2019 8:30 PM'
+details: |-
+  Shantymen in Concert
+  2 x 45 min sessions
+  Private Gig
 ---
 
