@@ -1,7 +1,7 @@
 ---
 templateKey: oddfellows-hall-page
 title: Oddfellows Hall
-image: /img/april-update.jpg
+image: /img/141005-shantymen-002.jpg
 oddfellowsGallery:
   - title: Inside the kitchen
     image: /img/141005-shantymen-0381.jpg
