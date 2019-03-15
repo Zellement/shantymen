@@ -1,7 +1,7 @@
 ---
 templateKey: standard-page
 title: About Us
-image: /img/shanty01.jpg
+image: /img/141005-shantymen-002.jpg
 ---
 ## The First Twenty Five (plus two!) Years …
 
