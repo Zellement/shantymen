@@ -33,7 +33,7 @@ const GigsAll = () => (
             {data.allMarkdownRemark.edges.map(gigdata => (
               <div key={gigdata.node.frontmatter.location + gigdata.node.frontmatter.datetime}>
                 <h3 key={gigdata.node.frontmatter.datetime}>{gigdata.node.frontmatter.datetime}</h3>
-                <h4 key={gigdata.node.frontmatter.location}>{gigdata.node.frontmatter.location}</h4>
+                <p key={gigdata.node.frontmatter.location}>{gigdata.node.frontmatter.location}</p>
               </div>
             ))}
           </div>
