@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { HTMLContent } from '../components/Content'
 
 const GigsAll = () => (
 	<StaticQuery
@@ -16,7 +17,6 @@ const GigsAll = () => (
             edges {
               node {
                 html
-                id
                 frontmatter {
                   location
                   date
@@ -32,8 +32,10 @@ const GigsAll = () => (
           <div>
             {data.allMarkdownRemark.edges.map(gigdata => (
               <div key={gigdata.node.frontmatter.location + gigdata.node.frontmatter.datetime}>
+              <hr />
                 <h3 key={gigdata.node.frontmatter.datetime}>{gigdata.node.frontmatter.datetime}</h3>
-                <p key={gigdata.node.frontmatter.location}>{gigdata.node.frontmatter.location}</p>
+                <h4 key={gigdata.node.frontmatter.location}>{gigdata.node.frontmatter.location}</h4>
+                <HTMLContent key={gigdata.node.html} content={gigdata.node.html} />
               </div>
             ))}
           </div>
