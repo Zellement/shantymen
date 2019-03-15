@@ -22,7 +22,6 @@ const GigsUpcoming = () => (
                   date
                   location
                   datetime
-                  details
                 }
               }
             }
