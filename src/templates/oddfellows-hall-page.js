@@ -25,8 +25,11 @@ function OddfellowsHallPage({ data }) {
           </aside>
         </div>
             <div>
-              {data.allMarkdownRemark.edges[0].node.frontmatter.galleryImages.map(oddfellowsImages => (
-                  <Img fluid={oddfellowsImages.childImageSharp.fluid} />
+              {post.frontmatter.oddfellowsGallery.map(oddfellowsGalleryData => (
+                  <div>
+                    <Img fluid={oddfellowsGalleryData.image.childImageSharp.fluid} />
+                    <h2>{oddfellowsGalleryData.title}</h2>
+                  </div>
               ))}
             </div>
       </section>
@@ -44,10 +47,13 @@ export const OddfellowsHallPageQuery = graphql`
       node {
         frontmatter {
           title
-          galleryImages {
-            childImageSharp {
-              fluid(maxWidth: 1600) {
-                ...GatsbyImageSharpFluid_withWebp
+          oddfellowsGallery {
+            title
+            image {
+              childImageSharp {
+                fluid(maxWidth:1600) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
               }
             }
           }
