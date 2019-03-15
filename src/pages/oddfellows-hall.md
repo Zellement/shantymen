@@ -1,5 +1,5 @@
 ---
-templateKey: standard-page
+templateKey: oddfellows-hall-page
 title: Oddfellows Hall
 image: /img/april-update.jpg
 galleryImages:
