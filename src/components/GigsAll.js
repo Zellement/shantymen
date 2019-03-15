@@ -21,7 +21,6 @@ const GigsAll = () => (
                   location
                   date
                   datetime
-                  details
                 }
               }
             }
