@@ -1,7 +1,7 @@
 ---
 templateKey: gigs-page
 title: Gigs
-image: /img/april-update.jpg
+image: /img/141005-shantymen-002.jpg
 ---
 These are the gigs which we have agreed for 2019 to date.
 
