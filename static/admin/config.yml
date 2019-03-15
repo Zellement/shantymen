@@ -60,15 +60,6 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Main Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/gallery.md"
-        label: "Gallery"
-        name: "gallery"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Main Image", name: "image", widget: "image"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Gallery", name: "gallery", widget: "image"}
       - file: "src/pages/discography.md"
         label: "Discography"
         name: "discography"

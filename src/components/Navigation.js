@@ -40,9 +40,6 @@ const Navigation = class extends React.Component {
           <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/guestbook">
             Guestbook
           </Link></li>
-          <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/gallery">
-            Gallery
-          </Link></li>
           <li className="navigation__list-item"><Link className="navigation__item" activeClassName="active" to="/book-us">
             Book Us
           </Link></li>
