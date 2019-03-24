@@ -27,7 +27,7 @@ function OddfellowsHallPage({ data }) {
             <div>
               {post.frontmatter.oddfellowsGallery.map(oddfellowsGalleryData => (
                   <div>
-                    <Img fluid={oddfellowsGalleryData.image.childImageSharp.fluid} />
+                    <Img fluid={oddfellowsGalleryData.image} />
                     <h2>{oddfellowsGalleryData.title}</h2>
                   </div>
               ))}
@@ -49,13 +49,7 @@ export const OddfellowsHallPageQuery = graphql`
           title
           oddfellowsGallery {
             title
-            image {
-              childImageSharp {
-                fluid(maxWidth:1600) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
+            image
           }
         }
         html

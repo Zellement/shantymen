@@ -6,30 +6,6 @@ module.exports = {
   plugins: [
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-        "gatsby-remark-copy-linked-files",
-        "gatsby-plugin-netlify-cms-paths",
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 1600,
-            },
-          }
-        ],
-      },
-    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -75,6 +51,30 @@ module.exports = {
           families: ['Source Sans Pro', 'Source Serif Pro']
         }
       }
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+        "gatsby-remark-copy-linked-files",
+        "gatsby-plugin-netlify-cms-paths",
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1600,
+            },
+          }
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
