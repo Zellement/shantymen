@@ -2,7 +2,7 @@
 templateKey: album-listing
 title: Off Quay
 release-year: '2016'
-artwork: /img/offquay.jpg
+artwork: /img/141005-shantymen-0381.jpg
 ---
 1. The Woolfleet Chorus
 2. Liverpool Lou 
