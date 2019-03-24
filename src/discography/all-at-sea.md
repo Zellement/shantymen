@@ -3,6 +3,7 @@ templateKey: album-listing
 title: All at Sea
 release-year: '2008'
 artwork: /img/all-at-sea.jpg
+album-artwork: /img/all-at-sea.jpg
 ---
 1. 10,000 Miles
 2. Cold Coast
