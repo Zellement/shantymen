@@ -10,6 +10,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+        "gatsby-remark-copy-linked-files",
         "gatsby-plugin-netlify-cms-paths",
           {
             resolve: 'gatsby-remark-relative-images',
