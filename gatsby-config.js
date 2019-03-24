@@ -4,18 +4,29 @@ module.exports = {
     description: 'The Shantymen travel widely throughout the UK and Ireland supporting Lifeboat Stations in their fundraising efforts and are always considering how they can help in others to raise funds by performing concerts.',
   },
   plugins: [
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-transformer-remark',
       options: {
-        name: "Sheringham Shantymen",
-        short_name: "Shantymen",
-        start_url: "/",
-        background_color: "#172957",
-        theme_color: "#FAC43E",
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: "standalone",
-        icon: "src/img/logo-badge.png", // This path is relative to the root of the site.
+        plugins: [
+        "gatsby-plugin-netlify-cms-paths",
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1600,
+            },
+          }
+        ],
       },
     },
     'gatsby-plugin-react-helmet',
@@ -29,12 +40,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        google: {
-          families: ['Source Sans Pro', 'Source Serif Pro']
-        }
-      }
+        path: `${__dirname}/src/img`,
+        name: 'images',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -58,41 +68,25 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
+        google: {
+          families: ['Source Sans Pro', 'Source Serif Pro']
+        }
+      }
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        plugins: [
-        "gatsby-plugin-netlify-cms-paths",
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 1600,
-            },
-          },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              destinationDir: 'static',
-            }
-          }
-        ],
+        name: "Sheringham Shantymen",
+        short_name: "Shantymen",
+        start_url: "/",
+        background_color: "#172957",
+        theme_color: "#FAC43E",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        icon: "src/img/logo-badge.png", // This path is relative to the root of the site.
       },
     },
     {
