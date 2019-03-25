@@ -1,6 +1,7 @@
 ---
 templateKey: album-listing
 title: All at Sea
+cover: /img/12227041_10156356418180372_2093312213578799071_n.jpg
 release-year: '2008'
 ---
 1. 10,000 Miles
