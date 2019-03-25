@@ -2,7 +2,6 @@
 templateKey: album-listing
 title: Off Quay
 release-year: '2016'
-artwork: /img/12227041_10156356418180372_2093312213578799071_n.jpg
 ---
 1. The Woolfleet Chorus
 2. Liverpool Lou 

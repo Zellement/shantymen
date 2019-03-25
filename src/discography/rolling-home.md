@@ -2,7 +2,6 @@
 templateKey: album-listing
 title: Rolling Home
 release-year: '2001'
-artwork: /img/rolling.jpg
 ---
 1. Sacramento
 2. Blow the Man Down

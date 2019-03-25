@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
+media_folder: static/images
 public_folder: /img
 
 collections:
@@ -117,5 +117,4 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "album-listing"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Release Year", name: "release-year", widget: "string"}
-      - {label: 'Artwork', name: 'artwork', widget: 'image', required: false }
       - {label: "Track Listing", name: "body", widget: "markdown"}

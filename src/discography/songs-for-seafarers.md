@@ -2,7 +2,6 @@
 templateKey: album-listing
 title: Songs for Seafarers
 release-year: '2003'
-artwork: /img/songs-seafarers.jpg
 ---
 1. Botany Bay
 2. Barrett’s Privateers

@@ -2,7 +2,6 @@
 templateKey: album-listing
 title: The Shantymen at Home
 release-year: '2014'
-artwork: /img/songs-seafarers.jpg
 ---
 1. Up She Rises
 2. Mary Ellen Carter
